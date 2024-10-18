@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    position: relative; /* Permite posicionamento absoluto em filhos */
+}
+
+canvas {
+    border: 1px solid black; /* Borda ao canvas */
+    background-color: lightblue; /* Cor de fundo */
+}
+
+header h1 {
+    font-size: 24px;
+    color: yellow;
+    margin-top: 10px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative; /* Permite que elementos filhos sejam posicionados em relação a ele */
+}
+
+#gameCanvas {
+    background-color: #4b21b5; /* Cor do rio */
+    display: block;
+    border: 2px solid white;
+}
+
+.river-structure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 73, 0); /* Cor da estrutura ao redor do rio */
+    z-index: -1; /* Coloca a estrutura atrás do canvas */
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color: yellow;
+}
+
+footer button {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+footer button:hover {
+    background-color: orange;
+}
